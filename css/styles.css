@@ -8,6 +8,7 @@
     --primary-bg-color:#fff;
    --border-color:#E7E9FC;
    --client-border:#8E8F99;
+   --black: #000000;
 }
 
 }
@@ -256,8 +257,11 @@ background-color:var(--accent-color);
 
 .footer-text{
     color: var(--white-color);
-
 }
+.media{
+    font-weight: 500;
+}
+
 .filter .button{
     color:var(--logo-web-color);
     background-color:var(--buttons-background-color);
@@ -347,8 +351,11 @@ max-width:264px;
     width: 264px;
     height: 112px;
     background-color: var(--buttons-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.team-icons{
+.team .team-icons{
     width: 232px;
     height: 40px;
     display: flex;
@@ -356,32 +363,50 @@ max-width:264px;
     margin-left:auto;
     margin-right: auto;
     margin-top: 8px;
+    list-style: none;
 }
 .around-link{
     background-color: var(--logo-web-color);
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.around-link:hover{
+    background-color: var(--accent-color);
 }
 .team-link{
     width: 40px;
     height:40px;
     padding: 12px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
 }
 .customers-icon{
     display:flex;
     width: 1128px;
     height: 88px;
     gap: 24px;
-
-
+    
 }
 .client-logo{
-    width: 168px;
+       width: 168px;
         height: 88px;
         border: 1px solid var(--client-border);
+        border-radius: 4px;
+        fill: var(--client-border);
 }
+.client-logo:hover{
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color)
+}
+
 .customers{
     padding-top:130px;
     padding-bottom:120px;
+}
+.footer .container {
+    display: flex;
 }
 .part-one{
     width: 264px;
@@ -389,10 +414,25 @@ max-width:264px;
         margin-right: 120px;
 }
 .media{
-    
+width: 208px;
+height: 80px;
+}
+.footer-links{
     width: 208px;
-        height: 80px;
-}
-.footer .container{
+    height: 40px;
+    gap: 16px;
+    margin-top: 16px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+.footer-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 50%;}
