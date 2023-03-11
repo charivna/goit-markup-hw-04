@@ -389,6 +389,7 @@ color: var(--white-color);
         align-items: center;
 }
 .customers-list{
+    flex-wrap: wrap;
     display:flex;
     gap: 24px;
 }
@@ -396,8 +397,8 @@ color: var(--white-color);
     flex-basis:calc((100% - 120px)/6);
 }
 .client-link{
-border: 1px solid var(--client-border);
-    border-radius: 4px;
+
+    
     height: 56px;
     display: flex;
     align-items: center;
@@ -409,6 +410,8 @@ border: 1px solid var(--client-border);
         height: 56px;
         fill: currentColor;
         padding: 16px 32px;
+        border: 1px solid var(--client-border);
+        border-radius: 4px;
       
 }
 .client-logo:hover,
