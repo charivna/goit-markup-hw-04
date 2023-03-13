@@ -156,20 +156,20 @@ margin-right: auto;
 }
 
 .section{
-    padding-top: 0;
-    padding-bottom: 120px;
+ padding: 120px 0;
 }
 .team{
   padding-top: 120px;
  padding-bottom: 120px;
 
 }
-
+.features{
+    padding-bottom: 0;
+}
 .features-list{
     display: flex;
     gap:24px;
     flex-wrap: wrap;
-    padding-top: 120px;
 }
 
 .features-list .title,
@@ -262,7 +262,10 @@ background-color:var(--accent-color);
     font-weight: 500;
    
 }
-
+.portfolio-section{
+    margin-top: 96px;
+    margin-bottom: 120px;
+}
 .filter .button{
     color:var(--logo-web-color);
     background-color:var(--buttons-background-color);
@@ -276,17 +279,14 @@ background-color:var(--accent-color);
     padding: 12px 24px;
     text-align: center;
 }
-.portfolio-filter{
-    display: flex;
- 
-}
+
 .filter{
-        display: flex;
+    display: flex;
     gap: 24px;
-     margin-left: auto;
-            margin-right: auto;
-            margin-top: 96px;
+    justify-content: center;
+    margin-bottom: 72px;
 }
+
 .filter .button:hover,
 .filter .button:focus {
     color: var(--white-color);
@@ -296,23 +296,15 @@ background-color:var(--accent-color);
         border-color:var(--accent-color);
    
 }
-.portfolio .list{
+.item-list{
     display: flex;
     flex-wrap: wrap;
-    padding-top: 72px;
-    padding-bottom: 120px;
+    justify-content: center;
+        align-items: center;
+        gap: 24px;
 }
-.portfolio .item:nth-child(3n){
-    margin-right: 0;
-}
-.portfolio .item{
-    max-width:360px;
-    margin-right: 24px;
-    margin-bottom: 48px;
-}
-.portfolio .item:nth-last-child(-n+3){
-    margin-bottom:0;
-}
+
+
 
 .border{
 border: 1px solid var(--border-color);
@@ -361,8 +353,6 @@ margin-bottom: 8px;
     align-items: center;
 }
 .team .team-icons{
-    width: 232px;
-    height: 40px;
     display: flex;
     gap: 24px;
     margin-left:auto;
@@ -385,7 +375,7 @@ margin-bottom: 8px;
     height:40px;
     padding: 12px;
     display: flex;
-        justify-content: center;
+    justify-content: center;
         align-items: center;
 }
 .customers-list{
@@ -465,3 +455,4 @@ background-color:rgba(255, 255, 255, 0.1);
         .parts{
                 align-items: baseline;
         }
+       
